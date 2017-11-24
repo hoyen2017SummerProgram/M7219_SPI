@@ -2,5 +2,5 @@
 /MDK-ARM/*.uvguix.*
 /MDK-ARM/*.uvguix
 /MDK-ARM/*.uvoptx
-
+/MDK-ARM/startup_stm32f030x8.lst
 
