@@ -120,7 +120,7 @@ int main(void)
 
   /* USER CODE BEGIN 2 */
   //8x8LED  init
-  LedControl(1);
+  LedControl(4);
   shutdown(0,false);
   setIntensity(0,8);
   clearDisplay(0);
@@ -129,7 +129,7 @@ int main(void)
   //HAL_Delay(1500);
 //  setLed(0, 1, 2, 1);
 //	setLed(0, 1, 3, 1);
-//	setLed(0, 1, 4, 1);
+	setLed(2, 1, 4, 1);
 //	setLed(0, 1, 5, 1);
 //  CS_LOW();
 //  //Now shift out the data 
@@ -144,11 +144,6 @@ int main(void)
 //			CS_HIGH();
 //		}
   /* USER CODE END 2 */
-	
-	for(ii=0;ii<8;ii++)
-	{
-		
-	}
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */

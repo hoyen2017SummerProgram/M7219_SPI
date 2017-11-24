@@ -170,7 +170,7 @@ void setChar(uint16_t addr, uint16_t digit, char value, bool dp)
 void spiTransfer(uint16_t addr, volatile uint8_t opcode, volatile uint8_t data)
 {
   int offset=addr*2;
-//  int maxbytes=maxDevices*2;
+  int maxbytes=maxDevices*2;
 
   memset(spidata, 0, 16);
   //put our device data into the array
@@ -178,6 +178,6 @@ void spiTransfer(uint16_t addr, volatile uint8_t opcode, volatile uint8_t data)
   spidata[offset+1]=data;
   CS_LOW();
   //Now shift out the data 
-  HAL_SPI_Transmit(&hspi1, spidata, 2, 100);
+  HAL_SPI_Transmit(&hspi1, spidata, maxbytes, 100);
   CS_HIGH();
 }
