@@ -374,12 +374,11 @@ ARM Macro Assembler    Page 6
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0 --apcs=interw
 ork --depend=m030spi_led\startup_stm32f030x8.d -om030spi_led\startup_stm32f030x
-8.o -ID:\106workproject\Max7219_M0-master\MDK-ARM\RTE\_M030SPI_LED -ID:\keil\kl
-ie\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include -ID:\keil\klie\ARM\PACK\Keil\STM32F0x
-x_DFP\1.5.0\Device\Include --predefine="__EVAL SETA 1" --predefine="__MICROLIB 
-SETA 1" --predefine="__UVISION_VERSION SETA 522" --predefine="_RTE_ SETA 1" --p
-redefine="STM32F030x8 SETA 1" --list=startup_stm32f030x8.lst startup_stm32f030x
-8.s
+8.o -ID:\hy_proj\M030_SPI_LED\M7219_SPI\MDK-ARM\RTE -IC:\Keil_v5\ARM\PACK\ARM\C
+MSIS\5.0.0-Beta4\CMSIS\Include -IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\D
+evice\Include --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SE
+TA 518" --predefine="_RTE_ SETA 1" --predefine="STM32F030x8 SETA 1" --list=star
+tup_stm32f030x8.lst startup_stm32f030x8.s
 
 
 
@@ -870,4 +869,4 @@ Symbol: __main
       At line 135 in file startup_stm32f030x8.s
 Comment: __main used once
 2 symbols
-385 symbols in table
+384 symbols in table
