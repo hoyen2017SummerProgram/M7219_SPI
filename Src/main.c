@@ -121,8 +121,15 @@ int main(void)
   /* USER CODE BEGIN 2 */
   //8x8LED  init
   LedControl(4);
-  shutdown(0,false);
+  shutdown(0, false);
+  shutdown(1, false);
+  shutdown(2, false);
+  shutdown(3, false);
   setIntensity(0,8);
+  setIntensity(1,8);
+  setIntensity(2,8);
+  setIntensity(3,8);
+  
   clearDisplay(0);
   
   //setLed(0, 1, 0xA1, 1);
@@ -155,6 +162,9 @@ int main(void)
  
 			CS_LOW();
 			setColumn(0, ii, presets[jj][ii]);
+      setColumn(1, ii, presets[jj+1][ii]);
+      setColumn(2, ii, presets[jj+2][ii]);
+      setColumn(3, ii, presets[jj+3][ii]);
   //    HAL_SPI_Transmit(&hspi1,&presets[jj][ii] ,
   //                         0 + (ii << 8),100);
 			CS_HIGH();
